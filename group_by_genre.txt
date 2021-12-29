@@ -1,0 +1,6 @@
+Genre with the highest number of releases- Comedy: 36
+Comedy: 36
+Drama: 35
+Thriller: 29
+Romance: 25
+Action: 24

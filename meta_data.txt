@@ -1,0 +1,3 @@
+Headers: ['SlNo', 'ReleaseDate', 'MovieName', 'ReleaseTime', 'Genre', 'Budget', 'BoxOfficeCollection', 'YoutubeViews', 'YoutubeLikes', 'YoutubeDislikes']
+Number of records: 149
+Number of columns: 10
