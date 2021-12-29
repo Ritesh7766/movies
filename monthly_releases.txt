@@ -1,0 +1,13 @@
+Number of movies grouped by month
+Jan: 20
+Mar: 19
+May: 18
+Jul: 16
+Feb: 16
+Apr: 11
+Sep: 10
+Jun: 10
+Nov: 10
+Oct: 9
+Aug: 8
+Dec: 2

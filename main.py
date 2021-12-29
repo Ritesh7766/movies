@@ -3,6 +3,7 @@ from compute.json import jsonify
 from compute.group_by_genre import group_by_genre
 from compute.group_by_genre_releasetime import group_by_genre_releasetime
 from compute.return_on_investment import return_on_investment
+from compute.max_movie_releases import max_movie_releases
 import operator
 
 csv_file = 'movies.csv'
@@ -30,7 +31,7 @@ with open('group_by_genre_releasetime.txt', 'w') as result:
         for release_time, no_of_movies in map.items():
             result.write(f'\t{release_time}: {no_of_movies}\n')
 
-# 4 - Top 10 movies with maximum ROI.
+# 6 - Top 10 movies with maximum ROI.
 result_set = return_on_investment(dataset)
 result_set = dict(sorted(result_set.items(), key=operator.itemgetter(1), reverse=True) )
 
@@ -42,3 +43,12 @@ with open('ROI.txt', 'w') as result:
             break
         result.write(f'{movie}: {ROI}\n')
         lim -= 1
+
+# 4 - Month of the year maximum movies releases were seen.
+result_set = max_movie_releases(dataset)
+result_set = dict(sorted(result_set.items(), key=operator.itemgetter(1), reverse=True) )
+
+with open('monthly_releases.txt', 'w') as result:
+    result.write(f'Number of movies grouped by month\n')
+    for month, num in result_set.items():
+        result.write(f'{month}: {num}\n')
