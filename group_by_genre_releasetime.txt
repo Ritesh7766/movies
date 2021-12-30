@@ -1,26 +1,26 @@
 Number of movies grouped by genre and release time
 Romance
+	LW: 4
 	N: 15
 	HS: 3
-	LW: 3
 	FS: 3
 Thriller
+	N: 22
 	LW: 2
-	N: 21
 	FS: 4
 	HS: 1
 Comedy
-	N: 22
+	N: 23
 	LW: 5
 	HS: 5
 	FS: 3
 Drama
+	N: 24
 	HS: 6
-	N: 23
 	FS: 4
 	LW: 1
 Action
-	N: 14
+	N: 15
 	HS: 3
 	LW: 3
 	FS: 3
